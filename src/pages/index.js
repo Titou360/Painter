@@ -48,6 +48,15 @@ export default function Home() {
         <section className="panel">
           <h2>THREE</h2>
         </section>
+        <section className="panel">
+          <h2>FOUR</h2>
+        </section>
+        <section className="panel">
+          <h2>FIVE</h2>
+        </section>
+        <section className="panel">
+          <h2>FOOTER</h2>
+        </section>
       </div>
     </>
   );
