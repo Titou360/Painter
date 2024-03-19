@@ -1,18 +1,52 @@
-import Link from 'next/link';
 import { useTranslation } from 'react-i18next';
 import Header from '../components/header';
 import LanguageSelector from '../components/switchLangue';
 
-export default function Home() {
-  const { t } = useTranslation('header');
-  return (
-    <main className="bg-painterGreyLight/50 dark:bg-painterDark">
-      <Header />
-      <h1 className="text-painterOrange text-4xl">Test</h1>
-      <Link href="/page2">Lien vers page 2</Link>
-      <LanguageSelector />
+// scroll horizontal
+import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
+import { gsap } from 'gsap/dist/gsap';
+import { useEffect } from 'react';
 
-      <p className="font-bold text-red-500 ">{t('hourly')}</p>
-    </main>
+gsap.registerPlugin(ScrollTrigger);
+
+export default function Home() {
+  // i18n
+  const { t } = useTranslation('header');
+
+  //scroll horizontal
+  useEffect(() => {
+    const sections = gsap.utils.toArray('.panel');
+
+    gsap.to(sections, {
+      xPercent: -100 * (sections.length - 1),
+      ease: 'none',
+      scrollTrigger: {
+        trigger: '.container',
+        pin: true,
+        invalidateOnRefresh: true,
+        anticipatePin: 1,
+        scrub: 1.23,
+        end: () => '+=' + document.querySelector('.container').offsetWidth
+      }
+    });
+  }, []);
+  return (
+    <div className="container bg-painterGreyLight/50 dark:bg-painterDark">
+      <section className="panel flex flex-col">
+        <Header />
+        <LanguageSelector />
+        <p>{t('hourly')}</p>
+        <h1>SCROLL DOWN</h1>
+      </section>
+      <section className="panel">
+        <h2>ONE</h2>
+      </section>
+      <section className="panel">
+        <h2>TWO</h2>
+      </section>
+      <section className="panel">
+        <h2>THREE</h2>
+      </section>
+    </div>
   );
 }

@@ -1,6 +1,7 @@
 import Head from 'next/head';
 
 import './globals.css';
+import './scroll.css';
 
 //i18n
 import { I18nextProvider } from 'react-i18next';
