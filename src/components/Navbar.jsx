@@ -41,12 +41,12 @@ const Navbar = () => {
       <CustomLink
         href="#"
         className="text-white hover:text-painterOrange transition duration-300 ease font-bold font-Poppins uppercase"
-        title="work"
+        title={t('navbar:work')}
       />
       <CustomLink
         href="#"
         className="text-white hover:text-painterOrange transition duration-300 ease font-bold font-Poppins uppercase"
-        title="contact"
+        title={t('navbar:contact')}
       />
     </nav>
   );
