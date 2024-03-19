@@ -32,6 +32,7 @@ export default function Home() {
     });
   }, []);
   return (
+<<<<<<< HEAD
     <div className="container bg-gray-400">
       <section className="panel">
         <Header />
@@ -47,5 +48,35 @@ export default function Home() {
         <h2>THREE</h2>
       </section>
     </div>
+=======
+    <>
+      <div className="container bg-painterGreyLight/50 dark:bg-painterDark">
+        {' '}
+        <section className="flex flex-col">
+          <Header />
+          <p>{t('hourly')}</p>
+          <h1>SCROLL DOWN</h1>
+        </section>
+        <section className="panel">
+          <About />
+        </section>
+        <section className="panel">
+          <h2>TWO</h2>
+        </section>
+        <section className="panel">
+          <h2>THREE</h2>
+        </section>
+        <section className="panel">
+          <h2>FOUR</h2>
+        </section>
+        <section className="panel">
+          <h2>FIVE</h2>
+        </section>
+        <section className="panel">
+          <h2>FOOTER</h2>
+        </section>
+      </div>
+    </>
+>>>>>>> e73b9b544734e0c41b92adc6d1fb6522f6f6655b
   );
 }

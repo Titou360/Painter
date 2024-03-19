@@ -4,7 +4,7 @@ import LanguageSelector from '../components/switchLangue';
 
 export default function Header() {
   return (
-    <header className="absolute flex justify-between">
+    <header className="flex justify-between">
       <div></div>
       <div className="flex flex-row flex-nowrap items-stretch">
         <Navbar />
