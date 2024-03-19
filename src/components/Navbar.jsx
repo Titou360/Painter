@@ -1,5 +1,5 @@
 import React from 'react'
-import { MoonIcon, SunIcon } from './icon';
+import { MoonIcon, SunIcon } from './icon.jsx';
 import useThemeSwitcher from './hooks/useThemeSwitcher';
 
 const Navbar = () => {
