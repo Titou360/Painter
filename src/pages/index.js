@@ -32,8 +32,11 @@ export default function Home() {
   return (
     <>
       <div className="container bg-painterGreyLight/50 dark:bg-painterDark">
-        <section className="panel">
+        {' '}
+        <section className="panel flex flex-col">
           <Header />
+          <p>{t('hourly')}</p>
+          <h1>SCROLL DOWN</h1>
         </section>
         <section className="panel">
           <h2>ONE</h2>

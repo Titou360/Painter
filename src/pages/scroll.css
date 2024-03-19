@@ -13,17 +13,12 @@ html {
 }
 
 body {
-  position: relative;
   height: unset;
   overflow-x: hidden;
   overflow-y: visible;
 }
 
 .panel {
-  display: flex;
-  position: relative;
-  align-items: center;
-  justify-content: center;
   width: 100vw;
   height: 100%;
 }
