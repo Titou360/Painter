@@ -26,17 +26,17 @@ const Navbar = () => {
       <CustomLink
         href="#"
         className="text-white hover:text-painterOrange transition duration-300 ease font-bold font-Poppins uppercase"
-        title="home"
+        title={t('navbar:home')}
       />
       <CustomLink
         href="#"
         className="text-white hover:text-painterOrange transition duration-300 ease font-bold font-Poppins uppercase"
-        title="about"
+        title={t('navbar:about')}
       />
       <CustomLink
         href="#"
         className="text-white hover:text-painterOrange transition duration-300 ease font-bold font-Poppins uppercase"
-        title="services"
+        title={t('navbar:services')}
       />
       <CustomLink
         href="#"
