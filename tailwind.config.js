@@ -8,11 +8,11 @@ module.exports = {
         mont: ['var(--font-mont)']
       },
       colors: {
-        painter_Orange: '#fa4f41',
-        painter_Dark: '#171717',
-        painter_Grey: '#232323',
-        painter_Grey_Light: '#777',
-        painter_White: '#ffffff',
+        painterOrange: '#fa4f41',
+        painterDark: '#171717',
+        painterGrey: '#232323',
+        painterGreyLight: '#777',
+        painterWhite: '#ffffff',
         primary: '#E55812',
         primaryDark: '#121212',
         expanderDark: '#B6BBC4'
