@@ -1,6 +1,5 @@
 import { useTranslation } from 'react-i18next';
 import Header from '../components/header';
-import LanguageSelector from '../components/switchLangue';
 
 // scroll horizontal
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
@@ -31,22 +30,25 @@ export default function Home() {
     });
   }, []);
   return (
-    <div className="container bg-painterGreyLight/50 dark:bg-painterDark">
-      <section className="panel flex flex-col">
+    <>
+      <div className="container bg-painterGreyLight/50 dark:bg-painterDark">
+        {' '}
         <Header />
-        <LanguageSelector />
-        <p>{t('hourly')}</p>
-        <h1>SCROLL DOWN</h1>
-      </section>
-      <section className="panel">
-        <h2>ONE</h2>
-      </section>
-      <section className="panel">
-        <h2>TWO</h2>
-      </section>
-      <section className="panel">
-        <h2>THREE</h2>
-      </section>
-    </div>
+
+        <section className="panel flex flex-col">
+          <p>{t('hourly')}</p>
+          <h1>SCROLL DOWN</h1>
+        </section>
+        <section className="panel">
+          <h2>ONE</h2>
+        </section>
+        <section className="panel">
+          <h2>TWO</h2>
+        </section>
+        <section className="panel">
+          <h2>THREE</h2>
+        </section>
+      </div>
+    </>
   );
 }
