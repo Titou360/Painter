@@ -1,13 +1,15 @@
 import { useTranslation } from 'react-i18next';
-import Header from '../components/header';
 
 // scroll horizontal
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 import { gsap } from 'gsap/dist/gsap';
 import { useEffect } from 'react';
-import About from '../components/About';
+import Header from '../components/header';
 
 gsap.registerPlugin(ScrollTrigger);
+
+//composants
+import About from '../components/About';
 
 export default function Home() {
   // i18n
@@ -34,7 +36,7 @@ export default function Home() {
     <>
       <div className="container bg-painterGreyLight/50 dark:bg-painterDark">
         {' '}
-        <section className="flex flex-col">
+        <section className="panel flex flex-col">
           <Header />
           <p>{t('hourly')}</p>
           <h1>SCROLL DOWN</h1>
@@ -47,15 +49,6 @@ export default function Home() {
         </section>
         <section className="panel">
           <h2>THREE</h2>
-        </section>
-        <section className="panel">
-          <h2>FOUR</h2>
-        </section>
-        <section className="panel">
-          <h2>FIVE</h2>
-        </section>
-        <section className="panel">
-          <h2>FOOTER</h2>
         </section>
       </div>
     </>
