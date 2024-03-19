@@ -3,12 +3,12 @@ import Navbar from './Navbar';
 
 export default function Header() {
   return (
-    <div>
+    <header className='flex justify-between'>
       <div></div>
-      <div>
+      <div className='flex flex-nowrap'>
         <Navbar />
         <DarkModeBtn />
       </div>
-    </div>
+    </header>
   );
 }
