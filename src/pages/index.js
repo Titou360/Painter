@@ -5,6 +5,7 @@ import Header from '../components/header';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 import { gsap } from 'gsap/dist/gsap';
 import { useEffect } from 'react';
+import About from '../components/About';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -39,7 +40,7 @@ export default function Home() {
           <h1>SCROLL DOWN</h1>
         </section>
         <section className="panel">
-          <h2>ONE</h2>
+          <About />
         </section>
         <section className="panel">
           <h2>TWO</h2>
