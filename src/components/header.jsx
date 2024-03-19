@@ -1,13 +1,14 @@
-
 import DarkModeBtn from './DarkModeBtn';
+import Navbar from './Navbar';
 
 export default function Header() {
-
   return (
     <div>
-
-
-      <DarkModeBtn />
+      <div></div>
+      <div>
+        <Navbar />
+        <DarkModeBtn />
+      </div>
     </div>
   );
 }

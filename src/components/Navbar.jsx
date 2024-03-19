@@ -7,7 +7,11 @@ const Navbar = () => {
   const { t } = useTranslation('header');
   return (
     <nav>
-      <Link href="#" className="text-Poppins_bold" title="HOME" />
+      <Link href="#" className="font-Poppins uppercase" title="home" />
+      <Link href="#" className="font-Poppins uppercase" title="about" />
+      <Link href="#" className="font-Poppins uppercase" title="services" />
+      <Link href="#" className="font-Poppins uppercase" title="work" />
+      <Link href="#" className="font-Poppins uppercase" title="contact" />
     </nav>
   );
 };

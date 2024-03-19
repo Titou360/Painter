@@ -8,7 +8,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        Poppins_bold: ['Poppins_bold', 'sans'],
+        Poppins: ['Poppins', 'sans'],
       },
       fontFamily: {
         mont: ['var(--font-mont)']
