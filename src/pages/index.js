@@ -1,4 +1,7 @@
 import { useTranslation } from 'react-i18next';
+//background image
+//page 1
+import backgroundImage from '../../public/assets/img/paintWBP.webp';
 
 // scroll horizontal
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
@@ -10,6 +13,9 @@ gsap.registerPlugin(ScrollTrigger);
 
 //composants
 import About from '../components/About';
+import ExtraFooter from '../components/ExtraFooter';
+import Hero from '../components/Hero';
+import ScrollInfo from '../components/scrollInfo';
 
 export default function Home() {
   // i18n
@@ -34,14 +40,23 @@ export default function Home() {
   }, []);
   return (
     <>
-      <div className="container bg-painterGreyLight/50 dark:bg-painterDark">
-        {' '}
-        <section className="panel flex flex-col">
+      <div className="container bg-painterDark">
+        <section
+          className="panel flex flex-col justify-between"
+          style={{
+            backgroundImage: `url(${backgroundImage.src})`,
+            backgroundSize: '70%', // rétrécissement de l'image à 50%
+            backgroundPosition: 'center',
+            backgroundRepeat: 'no-repeat',
+            backgroundColor: 'rgba(0, 0, 0, 0.1)'
+          }}
+        >
           <Header />
-          <p>{t('hourly')}</p>
-          <h1>SCROLL DOWN</h1>
+          <Hero />
+          <ScrollInfo />
+          <ExtraFooter />
         </section>
-        <section className="panel">
+        <section className="panel bg-white dark:bg-painterDark">
           <About />
         </section>
         <section className="panel">
