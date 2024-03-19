@@ -4,10 +4,12 @@ module.exports = {
     // Or if using `src` directory:
     './src/**/*.{js,ts,jsx,tsx,mdx}'
   ],
-
   darkMode: 'class',
   theme: {
     extend: {
+      fontFamily: {
+        Poppins_bold: ['Poppins_bold', 'sans'],
+      },
       fontFamily: {
         mont: ['var(--font-mont)']
       },

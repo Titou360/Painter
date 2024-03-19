@@ -1,13 +1,13 @@
-import Image from 'next/image';
-import DarkModeBtn from './DarkModeBtn';
+
+import Link from 'next/link';
+import { useTranslation } from 'react-i18next';
+
 
 const Navbar = () => {
+  const { t } = useTranslation('header');
   return (
     <nav>
-      <Image src={Logo} alt="Logo de painter" />
-      <div>
-        <DarkModeBtn />
-      </div>
+      <Link href="#" className="text-Poppins_bold" title="HOME" />
     </nav>
   );
 };

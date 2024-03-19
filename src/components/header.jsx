@@ -1,10 +1,13 @@
-import { useTranslation } from 'react-i18next';
+
+import DarkModeBtn from './DarkModeBtn';
 
 export default function Header() {
-  const { t } = useTranslation('header');
+
   return (
     <div>
-      <p className="font-bold text-red-500 ">{t('hourly')}</p>
+
+
+      <DarkModeBtn />
     </div>
   );
 }
