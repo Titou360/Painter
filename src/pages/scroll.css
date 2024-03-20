@@ -2,7 +2,6 @@ html {
   overflow-y: scroll;
   height: 100%;
   -webkit-overflow-scrolling: touch;
-  overflow-scrolling: touch;
 }
 body {
   overflow-y: visible;
@@ -15,33 +14,15 @@ body {
 }
 
 .container {
-  width: 400vw;
+  width: 500vw;
   height: 100vh;
   display: flex;
   flex-wrap: wrap;
 }
 
-.firstContainer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background: yellow;
-}
-
-.lastContainer {
-  display: flex;
-  height: 100vh;
-  background: yellow;
-}
-
 .panel {
   width: 100vw;
   height: 100vh;
-}
-.red {
-  background: blue;
 }
 .red {
   background: red;
