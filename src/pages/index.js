@@ -1,56 +1,46 @@
-import { useTranslation } from 'react-i18next';
-
-// scroll horizontal
-import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
-import { gsap } from 'gsap/dist/gsap';
-import { useEffect } from 'react';
-import Header from '../components/header';
+import gsap from 'gsap/dist/gsap';
+import ScrollTrigger from 'gsap/dist/ScrollTrigger';
+import { useLayoutEffect, useRef } from 'react';
 
 gsap.registerPlugin(ScrollTrigger);
 
-//composants
-import About from '../components/About';
+export default function App() {
+  const component = useRef();
+  const slider = useRef();
 
-export default function Home() {
-  // i18n
-  const { t } = useTranslation('header');
+  useLayoutEffect(() => {
+    let ctx = gsap.context(() => {
+      let panels = gsap.utils.toArray('.panel');
+      gsap.to(panels, {
+        xPercent: -100 * (panels.length - 1),
+        ease: 'none',
+        scrollTrigger: {
+          trigger: slider.current,
+          pin: true,
+          scrub: 1,
+          snap: 1 / (panels.length - 1),
+          end: () => '+=' + slider.current.offsetWidth
+        }
+      });
+    }, component);
+    return () => ctx.revert();
+  });
 
-  //scroll horizontal
-  useEffect(() => {
-    const sections = gsap.utils.toArray('.panel');
-
-    gsap.to(sections, {
-      xPercent: -100 * (sections.length - 1),
-      ease: 'none',
-      scrollTrigger: {
-        trigger: '.container',
-        pin: true,
-        invalidateOnRefresh: true,
-        anticipatePin: 1,
-        scrub: 1.23,
-        end: () => '+=' + document.querySelector('.container').offsetWidth
-      }
-    });
-  }, []);
   return (
-    <>
-      <div className="container bg-painterGreyLight/50 dark:bg-painterDark">
-        {' '}
-        <section className="panel flex flex-col">
-          <Header />
-          <p>{t('hourly')}</p>
-          <h1>SCROLL DOWN</h1>
-        </section>
-        <section className="panel">
-          <About />
-        </section>
-        <section className="panel">
-          <h2>TWO</h2>
-        </section>
-        <section className="panel">
-          <h2>THREE</h2>
-        </section>
+    <div className="App" ref={component}>
+      <div ref={slider} className="container">
+        <div className="description panel blue">
+          <div>
+            SCROLL DOWN
+            <div className="scroll-down"></div>
+          </div>
+        </div>
+        <div className="panel red">ONE</div>
+        <div className="panel orange">
+          <p>TEST page 2</p>
+        </div>
+        <div className="panel purple">THREE</div>
       </div>
-    </>
+    </div>
   );
 }
