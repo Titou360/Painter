@@ -2,8 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @font-face {
-  font-family: "Poppins";
-  src: url("/assets/fonts/Poppins-Bold.ttf");
+  font-family: 'Poppins';
+  src: url('/assets/fonts/Poppins-Bold.ttf');
+}
+@font-face {
+  font-family: 'Cormorant';
+  src: url('/assets/fonts/Cormorant-Italic-VariableFont_wght.ttf');
 }
