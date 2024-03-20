@@ -59,10 +59,10 @@ export default function Home() {
         <section className="panel bg-white dark:bg-painterDark">
           <About />
         </section>
-        <section className="panel">
+        <section className="panel bg-painterOrange">
           <h2>TWO</h2>
         </section>
-        <section className="panel">
+        <section className="panel bg-white">
           <h2>THREE</h2>
         </section>
       </div>
