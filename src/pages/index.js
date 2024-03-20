@@ -1,15 +1,18 @@
+//scroll
+import gsap from 'gsap/dist/gsap';
+import ScrollTrigger from 'gsap/dist/ScrollTrigger';
+import { useEffect, useRef } from 'react';
+
+gsap.registerPlugin(ScrollTrigger);
+  
+// i18n 
 import { useTranslation } from 'react-i18next';
+
 //background image
 //page 1
 import backgroundImage from '../../public/assets/img/paintWBP.webp';
-
-// scroll horizontal
-import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
-import { gsap } from 'gsap/dist/gsap';
-import { useEffect } from 'react';
 import Header from '../components/header';
 
-gsap.registerPlugin(ScrollTrigger);
 
 //composants
 import About from '../components/About';
@@ -18,29 +21,32 @@ import Hero from '../components/Hero';
 import ScrollInfo from '../components/scrollInfo';
 
 export default function Home() {
-  // i18n
+  
   const { t } = useTranslation('header');
+const component = useRef();
+  const slider = useRef();
 
-  //scroll horizontal
   useEffect(() => {
-    const sections = gsap.utils.toArray('.panel');
+    let ctx = gsap.context(() => {
+      let panels = gsap.utils.toArray('.panel');
+      gsap.to(panels, {
+        xPercent: -100 * (panels.length - 1),
+        ease: 'none',
+        scrollTrigger: {
+          trigger: slider.current,
+          pin: true,
+          scrub: 1,
+          snap: 1 / (panels.length - 1),
+          end: () => '+=' + slider.current.offsetWidth
+        }
+      });
+    }, component);
+    return () => ctx.revert();
+  }, [slider]);
 
-    gsap.to(sections, {
-      xPercent: -100 * (sections.length - 1),
-      ease: 'none',
-      scrollTrigger: {
-        trigger: '.container',
-        pin: true,
-        invalidateOnRefresh: true,
-        anticipatePin: 1,
-        scrub: 1.23,
-        end: () => '+=' + document.querySelector('.container').offsetWidth
-      }
-    });
-  }, []);
   return (
-    <>
-      <div className="container bg-painterDark">
+    <div className="App" ref={component}>
+      <div className="container bg-painterDark" ref={slider}>
         <section
           className="panel flex flex-col justify-between"
           style={{
@@ -66,6 +72,6 @@ export default function Home() {
           <h2>THREE</h2>
         </section>
       </div>
-    </>
+    </div>
   );
 }
