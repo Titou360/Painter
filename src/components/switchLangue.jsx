@@ -7,8 +7,8 @@ export default function LanguageSelector() {
     i18n.changeLanguage(selectedLang);
   };
   return (
-    <div>
-      <label htmlFor="langue-select">Langue :</label>
+    <div className='ml-3'>
+      <label htmlFor="langue-select"></label>
 
       <select name="langue" id="langue-select" onChange={changeLanguage}>
         <option value="fr">Français</option>

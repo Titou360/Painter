@@ -20,7 +20,7 @@ const CustomLink = ({ href, title, className = '' }) => {
 };
 
 const Navbar = () => {
-  const { t } = useTranslation('header');
+  const { t } = useTranslation('navbar');
   return (
     <nav className="flex flex-nowrap gap-5">
       <CustomLink
