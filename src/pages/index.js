@@ -19,6 +19,7 @@ import ExtraFooter from '../components/ExtraFooter';
 import Hero from '../components/Hero';
 import ScrollInfo from '../components/scrollInfo';
 
+
 export default function Home() {
   const { t } = useTranslation('header');
   const component = useRef();
@@ -44,7 +45,7 @@ export default function Home() {
 
   return (
     <div className="App" ref={component}>
-      <div className="container bg-painterDark" ref={slider}>
+      <div className="container bg-painterDark dark:bg-white" ref={slider}>
         <section
           className="panel flex flex-col justify-between"
           style={{
