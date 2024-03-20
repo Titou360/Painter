@@ -14,7 +14,7 @@ body {
 }
 
 .container {
-  width: 500vw;
+  width: 700vw;
   height: 100vh;
   display: flex;
   flex-wrap: wrap;

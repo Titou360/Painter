@@ -4,15 +4,14 @@ import ScrollTrigger from 'gsap/dist/ScrollTrigger';
 import { useEffect, useRef } from 'react';
 
 gsap.registerPlugin(ScrollTrigger);
-  
-// i18n 
+
+// i18n
 import { useTranslation } from 'react-i18next';
 
 //background image
 //page 1
 import backgroundImage from '../../public/assets/img/paintWBP.webp';
 import Header from '../components/header';
-
 
 //composants
 import About from '../components/About';
@@ -21,9 +20,8 @@ import Hero from '../components/Hero';
 import ScrollInfo from '../components/scrollInfo';
 
 export default function Home() {
-  
   const { t } = useTranslation('header');
-const component = useRef();
+  const component = useRef();
   const slider = useRef();
 
   useEffect(() => {
@@ -66,10 +64,19 @@ const component = useRef();
           <About />
         </section>
         <section className="panel">
-          <h2>TWO</h2>
+          <h2>THREE</h2>
         </section>
         <section className="panel">
-          <h2>THREE</h2>
+          <h2>FOUR</h2>
+        </section>
+        <section className="panel">
+          <h2>FIVE</h2>
+        </section>
+        <section className="panel">
+          <h2>SIX</h2>
+        </section>
+        <section className="panel">
+          <h2>SEVEN</h2>
         </section>
       </div>
     </div>
