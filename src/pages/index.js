@@ -14,10 +14,10 @@ import backgroundImage from '../../public/assets/img/paintWBP.webp';
 import Header from '../components/header';
 
 //composants
-import About from '../components/About';
-import ExtraFooter from '../components/ExtraFooter';
-import Hero from '../components/Hero';
-import Footer from '../components/Footer';
+import About from '../components/about';
+import ExtraFooter from '../components/extraFooter';
+import Hero from '../components/hero';
+import Footer from '../components/footer';
 import ScrollInfo from '../components/scrollInfo';
 
 
@@ -48,6 +48,7 @@ export default function Home() {
     <div className="App" ref={component}>
       <div className="container bg-painterDark dark:bg-white" ref={slider}>
         <section
+          id="home"
           className="panel flex flex-col justify-between"
           style={{
             backgroundImage: `url(${backgroundImage.src})`,
@@ -62,22 +63,22 @@ export default function Home() {
           <ScrollInfo />
           <ExtraFooter />
         </section>
-        <section className="panel bg-white dark:bg-painterDark">
+        <section id="about" className="panel bg-white dark:bg-painterDark">
           <About />
         </section>
-        <section className="panel bg-painterOrange">
+        <section id="services" className="panel bg-painterOrange">
           <h2>THREE</h2>
         </section>
-        <section className="panel bg-white">
+        <section id="works" className="panel bg-white">
           <h2>FOUR</h2>
         </section>
-        <section className="panel bg-blue-500">
+        <section id="#" className="panel bg-blue-500">
           <h2>FIVE</h2>
         </section>
-        <section className="panel bg-green-500">
+        <section id="#" className="panel bg-green-500">
           <h2>SIX</h2>
         </section>
-        <section className="panel bg-painterDark">
+        <section id="contact" className="panel bg-painterDark">
           <Footer />
         </section>
       </div>

@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 import about from '../../public/assets/img/about.jpg';
 import logoAbout from '../../public/assets/img/logo_about.png';
 import logoAboutMoutain from '../../public/assets/img/logo_about_mountain.png';
-import Title from './title';
+import Title from './Title';
 
 export default function About() {
   const { t } = useTranslation('about');

@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { FacebookIcon, InstagramIcon, TwitterIcon } from './icon';
+import { FacebookIcon, InstagramIcon, TwitterIcon } from './Icon';
 
 const SocialIconBar = () => {
   return (

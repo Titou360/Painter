@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next';
-import SocialIconBar from './SocialIconBar';
+import SocialIconBar from './socialIconBar';
 
 const ExtraFooter = () => {
   const { t } = useTranslation('extraFooter');
