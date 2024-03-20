@@ -1,0 +1,28 @@
+{
+  "articles": [
+    {
+      "icone": "/assets/img/Icons/strategy.png",
+      "titre": "Stratégie",
+      "description": "Ceci est la description du premier article.",
+      "liste": ["point 1", "point 2", "point 3"]
+    },
+    {
+      "icone": "/assets/img/Icons/puzzle.png",
+      "titre": "Deuxième article",
+      "description": "Ceci est la description du deuxième article.",
+      "liste": ["point 1", "point 2", "point 3"]
+    },
+    {
+      "icone": "/assets/img/Icons/digital.png",
+      "titre": "Troisième article",
+      "description": "Ceci est la description du troisième article.",
+      "liste": ["point 1", "point 2", "point 3"]
+    },
+    {
+      "icone": "/assets/img/Icons/entreprise.png",
+      "titre": "Quatrième article",
+      "description": "Ceci est la description du quatrième article.",
+      "liste": ["point 1", "point 2", "point 3"]
+    }
+  ]
+}
