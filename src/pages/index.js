@@ -17,7 +17,9 @@ import Header from '../components/header';
 import About from '../components/About';
 import ExtraFooter from '../components/ExtraFooter';
 import Hero from '../components/Hero';
+import Footer from '../components/Footer';
 import ScrollInfo from '../components/scrollInfo';
+
 
 export default function Home() {
   const { t } = useTranslation('header');
@@ -44,7 +46,7 @@ export default function Home() {
 
   return (
     <div className="App" ref={component}>
-      <div className="container bg-painterDark" ref={slider}>
+      <div className="container bg-painterDark dark:bg-white" ref={slider}>
         <section
           className="panel flex flex-col justify-between"
           style={{
@@ -63,20 +65,20 @@ export default function Home() {
         <section className="panel bg-white dark:bg-painterDark">
           <About />
         </section>
-        <section className="panel">
+        <section className="panel bg-painterOrange">
           <h2>THREE</h2>
         </section>
-        <section className="panel">
+        <section className="panel bg-white">
           <h2>FOUR</h2>
         </section>
-        <section className="panel">
+        <section className="panel bg-blue-500">
           <h2>FIVE</h2>
         </section>
-        <section className="panel">
+        <section className="panel bg-green-500">
           <h2>SIX</h2>
         </section>
-        <section className="panel">
-          <h2>SEVEN</h2>
+        <section className="panel bg-painterDark">
+          <Footer />
         </section>
       </div>
     </div>
