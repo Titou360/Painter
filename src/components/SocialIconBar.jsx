@@ -11,7 +11,7 @@ const SocialIconBar = () => {
         target="_blank"
         whileHover={{ y: -5 }}
         whileTap={{ scale: 0.9 }}
-        className="w-8 mx-3 fill-white hover:fill-painterOrange dark:hover:fill-painterOrange"
+        className="w-8 mx-3 fill-white dark:fill-painterDark hover:fill-painterOrange dark:hover:fill-painterOrange"
       >
         <TwitterIcon />
       </motion.a>
@@ -22,7 +22,7 @@ const SocialIconBar = () => {
         target="_blank"
         whileHover={{ y: -5 }}
         whileTap={{ scale: 0.9 }}
-        className="w-8 mx-3 fill-white hover:fill-painterOrange dark:hover:fill-painterOrange"
+        className="w-8 mx-3 fill-white dark:fill-painterDark hover:fill-painterOrange dark:hover:fill-painterOrange"
       >
         <FacebookIcon />
       </motion.a>{' '}
@@ -33,7 +33,7 @@ const SocialIconBar = () => {
         target="_blank"
         whileHover={{ y: -5 }}
         whileTap={{ scale: 0.9 }}
-        className="w-8 mx-3 fill-white hover:fill-painterOrange dark:hover:fill-painterOrange"
+        className="w-8 mx-3 fill-white dark:fill-painterDark hover:fill-painterOrange dark:hover:fill-painterOrange"
       >
         <InstagramIcon />
       </motion.a>

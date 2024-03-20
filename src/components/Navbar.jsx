@@ -25,27 +25,27 @@ const Navbar = () => {
     <nav className="flex flex-nowrap gap-5">
       <CustomLink
         href="#"
-        className="text-white text-sm hover:text-painterOrange transition duration-300 ease font-bold font-Poppins uppercase"
+        className="text-white dark:text-painterDark text-sm hover:text-painterOrange dark:hover:text-painterOrange transition duration-300 ease font-bold font-Poppins uppercase"
         title={t('navbar:home')}
       />
       <CustomLink
         href="#"
-        className="text-white text-sm hover:text-painterOrange transition duration-300 ease font-bold font-Poppins uppercase"
+        className="text-white dark:text-painterDark text-sm hover:text-painterOrange dark:hover:text-painterOrange transition duration-300 ease font-bold font-Poppins uppercase"
         title={t('navbar:about')}
       />
       <CustomLink
         href="#"
-        className="text-white text-sm hover:text-painterOrange transition duration-300 ease font-bold font-Poppins uppercase"
+        className="text-white dark:text-painterDark text-sm hover:text-painterOrange dark:hover:text-painterOrange transition duration-300 ease font-bold font-Poppins uppercase"
         title={t('navbar:services')}
       />
       <CustomLink
         href="#"
-        className="text-white text-sm hover:text-painterOrange transition duration-300 ease font-bold font-Poppins uppercase"
+        className="text-white dark:text-painterDark text-sm hover:text-painterOrange dark:hover:text-painterOrange transition duration-300 ease font-bold font-Poppins uppercase"
         title={t('navbar:work')}
       />
       <CustomLink
         href="#"
-        className="text-white text-sm hover:text-painterOrange transition duration-300 ease font-bold font-Poppins uppercase"
+        className="text-white dark:text-painterDark text-sm hover:text-painterOrange dark:hover:text-painterOrange transition duration-300 ease font-bold font-Poppins uppercase"
         title={t('navbar:contact')}
       />
     </nav>
