@@ -24,7 +24,7 @@ export default function About() {
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec velit magna, consectetur at suscipit eu, dapibus vel odio. Mauris ac nulla at
           ligula interdum ullamcorper.
         </p>
-        <div className="flex gap-12 mt-6  justify-center ">
+        <div className="flex gap-12 mt-6 justify-center ">
           <Image src={logoAbout} alt="logo partenaire" height={50} width={100} />
           <Image src={logoAboutMoutain} alt="logo climb mountain" width={200} />
         </div>
