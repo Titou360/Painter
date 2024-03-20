@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <>
       <div className="w-4/5 mx-auto my-16">
-        <h2 className="text-white text-4xl">Ready to take action ?</h2>
+        <h2 className="text-white dark:text-painterDark text-4xl">Ready to take action ?</h2>
       </div>
       <div className="w-full flex">
         <div className="flex flex-col w-1/3">
