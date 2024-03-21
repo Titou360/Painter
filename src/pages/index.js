@@ -16,10 +16,10 @@ import Header from '../components/header';
 //composants
 import About from '../components/about';
 import ExtraFooter from '../components/extraFooter';
-import Hero from '../components/hero';
 import Footer from '../components/footer';
+import Hero from '../components/hero';
 import ScrollInfo from '../components/scrollInfo';
-
+import SelectedProjet from '../components/selectedProjet';
 
 export default function Home() {
   const { t } = useTranslation('header');
@@ -70,7 +70,7 @@ export default function Home() {
           <h2>THREE</h2>
         </section>
         <section id="works" className="panel bg-white">
-          <h2>FOUR</h2>
+          <SelectedProjet />
         </section>
         <section id="#" className="panel bg-blue-500">
           <h2>FIVE</h2>

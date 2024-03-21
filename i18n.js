@@ -4,6 +4,9 @@ import { initReactI18next } from 'react-i18next';
 import aboutTranslationEN from './public/locales/en/about.json';
 import aboutTranslationFR from './public/locales/fr/about.json';
 
+import projetTranslationEn from './public/locales/en/projet.json';
+import projetTranslationFR from './public/locales/fr/projet.json';
+
 import headerTranslationsEN from './public/locales/en/header.json';
 import headerTranslationsFR from './public/locales/fr/header.json';
 
@@ -19,13 +22,12 @@ import scrollInfoFR from './public/locales/fr/scrollInfo.json';
 import heroEN from './public/locales/en/hero.json';
 import heroFR from './public/locales/fr/hero.json';
 
-
-
 const resources = {
   en: {
     header: headerTranslationsEN,
     navbar: navbarTranslationEN,
     about: aboutTranslationEN,
+    projet: projetTranslationEn,
     extraFooter: extraFooterTranslationEN,
     scrollInfo: scrollInfoEN,
     hero: heroEN
@@ -34,6 +36,7 @@ const resources = {
     header: headerTranslationsFR,
     navbar: navbarTranslationFR,
     about: aboutTranslationFR,
+    projet: projetTranslationFR,
     extraFooter: extraFooterTranslationFR,
     scrollInfo: scrollInfoFR,
     hero: heroFR
