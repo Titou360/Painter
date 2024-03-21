@@ -16,7 +16,7 @@ const Hero = () => {
         start: 'right 40%',
         end: 'right 60%', // Commencer l'animation lorsque le haut de l'élément atteint le centre de la fenêtre
         scrub: 2,
-        immediateRender: true,
+        immediateRender: true
       }
     });
 
@@ -28,24 +28,24 @@ const Hero = () => {
     });
   }, []);
 
-   useEffect(() => {
-     const timeline = gsap.timeline({
-       scrollTrigger: {
-         trigger: titleRef.current,
-         start: 'right 40%',
-         end: 'right 60%', // Commencer l'animation lorsque le haut de l'élément atteint le centre de la fenêtre
-         scrub: 2,
-         immediateRender: true
-       }
-     });
+  useEffect(() => {
+    const timeline = gsap.timeline({
+      scrollTrigger: {
+        trigger: titleRef.current,
+        start: 'right 40%',
+        end: 'right 60%', // Commencer l'animation lorsque le haut de l'élément atteint le centre de la fenêtre
+        scrub: 2,
+        immediateRender: true
+      }
+    });
 
-     timeline.to(titleRef.current, {
-       x: '5vw', // Mouvement vers la droite
-       opacity: 0.9, // Opacité réduite
-       ease: 'none', // Fonction d'animation
-       duration: 4 // Durée de l'animation
-     });
-   }, []);
+    timeline.to(titleRef.current, {
+      x: '5vw', // Mouvement vers la droite
+      opacity: 0.9, // Opacité réduite
+      ease: 'none', // Fonction d'animation
+      duration: 4 // Durée de l'animation
+    });
+  }, []);
 
   const { t } = useTranslation('hero');
   return (
