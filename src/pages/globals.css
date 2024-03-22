@@ -26,6 +26,7 @@
 #cursor-text {
   color: white;
   position: absolute;
+  font-weight: bold;
   transform: translate(-50%, -80%);
   pointer-events: none;
   opacity: 0;

@@ -24,9 +24,9 @@ export default function SelectedProjet() {
     };
 
     const updateBallAndTextPosition = () => {
-      ballRef.current.style.left = cursorPosition.x + 'px';
+      ballRef.current.style.left = cursorPosition.x - 300 + 'px';
       ballRef.current.style.top = cursorPosition.y + 'px';
-      cursorTextRef.current.style.left = cursorPosition.x + 'px';
+      cursorTextRef.current.style.left = cursorPosition.x - 300 + 'px';
       cursorTextRef.current.style.top = cursorPosition.y + 'px';
     };
 
@@ -68,7 +68,7 @@ export default function SelectedProjet() {
             src={projet1}
             alt="projet consultation"
             className="object-cover transition-transform transform-gpu hover:scale-110 duration-500"
-            data-cursor-text="consultation"
+            data-cursor-text="Consultation"
           />
         </div>
         <div className="col-span-1 rounded-lg  flex flex-col gap-10 overflow-hidden" onMouseEnter={handleHoverEnter} onMouseLeave={handleHoverLeave}>
@@ -76,21 +76,21 @@ export default function SelectedProjet() {
             src={projet2}
             alt="projet consultation"
             className=" rounded-lg object-cover transition-transform transform-gpu hover:scale-110 duration-500"
-            data-cursor-text="conversation"
+            data-cursor-text="Design"
           />
           <Image
             src={projet3}
             alt="projet consultation"
             className="rounded-lg object-cover transition-transform transform-gpu hover:scale-110 duration-500"
-            data-cursor-text="design"
+            data-cursor-text="Design"
           />
         </div>
-        <div className=" rounded-lg  col-span-1 h-full overflow-hidden onMouseEnter={handleHoverEnter} onMouseLeave={handleHoverLeave}">
+        <div className=" rounded-lg  col-span-1 h-full overflow-hidden" onMouseEnter={handleHoverEnter} onMouseLeave={handleHoverLeave}>
           <Image
             src={projet4}
             alt="projet consultation"
             className=" object-cover transition-transform transform-gpu hover:scale-110 duration-500"
-            data-cursor-text="smartphone"
+            data-cursor-text="Smartphone"
           />
         </div>
       </div>

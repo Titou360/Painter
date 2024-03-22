@@ -29,7 +29,7 @@ export default function About() {
     });
 
     timeline.to(imgAboutRef.current, {
-      x: '10vw', // Mouvement vers la gauche
+      x: '-5vw', // Mouvement vers la gauche
       opacity: 0.9, // Opacité réduite
       ease: 'none', // Fonction d'animation
       duration: 4 // Durée de l'animation
