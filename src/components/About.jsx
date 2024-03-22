@@ -21,15 +21,15 @@ export default function About() {
     const timeline = gsap.timeline({
       scrollTrigger: {
         trigger: imgAboutRef.current,
-        start: 'right 40%',
-        end: 'right 60%', // Commencer l'animation lorsque le haut de l'élément atteint le centre de la fenêtre
+        start: 'left 40%',
+        end: 'left 60%',
         scrub: 2,
         immediateRender: true
       }
     });
 
     timeline.to(imgAboutRef.current, {
-      x: '-5vw', // Mouvement vers la gauche
+      x: '10vw', // Mouvement vers la gauche
       opacity: 0.9, // Opacité réduite
       ease: 'none', // Fonction d'animation
       duration: 4 // Durée de l'animation
@@ -58,7 +58,7 @@ export default function About() {
         </div>
       </section>
 
-      <div ref={imgAboutRef}>
+      <div ref={imgAboutRef} className="ml-[10vw]">
         <Image src={about} alt="mise en scene bureau" className="mt-[2em] mr-[4em] ml-4 rounded-lg " />
       </div>
     </div>
