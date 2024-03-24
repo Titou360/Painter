@@ -28,6 +28,9 @@ import blogFR from './public/locales/fr/blog.json';
 import numberEN from './public/locales/en/number.json';
 import numberFR from './public/locales/fr/number.json';
 
+import expertiseEN from './public/locales/en/expertise.json';
+import expertiseFR from './public/locales/fr/expertise.json';
+
 const resources = {
   en: {
     header: headerTranslationsEN,
@@ -38,7 +41,8 @@ const resources = {
     scrollInfo: scrollInfoEN,
     hero: heroEN,
     blog: blogEN,
-    number: numberEN
+    number: numberEN,
+    expertise: expertiseEN
   },
   fr: {
     header: headerTranslationsFR,
@@ -49,7 +53,8 @@ const resources = {
     scrollInfo: scrollInfoFR,
     hero: heroFR,
     blog: blogFR,
-    number: numberFR
+    number: numberFR,
+    expertise: expertiseFR
   }
 };
 
