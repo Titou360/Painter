@@ -24,7 +24,8 @@ const Hero = () => {
       x: '-5vw', // Mouvement vers la gauche
       opacity: 0.9, // Opacité réduite
       ease: 'none', // Fonction d'animation
-      duration: 4 // Durée de l'animation
+      duration: 4, // Durée de l'animation
+      marker: true
     });
   }, []);
 
@@ -33,7 +34,7 @@ const Hero = () => {
       scrollTrigger: {
         trigger: titleRef.current,
         start: 'right 40%',
-        end: 'right 60%', // Commencer l'animation lorsque le haut de l'élément atteint le centre de la fenêtre
+        end: 'right 60%',
         scrub: 2,
         immediateRender: true
       }

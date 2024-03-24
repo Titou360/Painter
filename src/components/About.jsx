@@ -1,7 +1,6 @@
 import Image from 'next/image';
 import { useTranslation } from 'react-i18next';
 
-import about from '../../public/assets/img/about.jpg';
 import logoAbout from '../../public/assets/img/logo_about.png';
 import logoAboutMoutain from '../../public/assets/img/logo_about_mountain.png';
 import Title from './Title';
@@ -21,8 +20,8 @@ export default function About() {
     const timeline = gsap.timeline({
       scrollTrigger: {
         trigger: imgAboutRef.current,
-        start: 'left 40%',
-        end: 'left 60%',
+        start: 'left 20%',
+        end: 'left 90%',
         scrub: 2,
         immediateRender: true
       }
@@ -30,9 +29,11 @@ export default function About() {
 
     timeline.to(imgAboutRef.current, {
       x: '-5vw', // Mouvement vers la gauche
+      rotation: 360, // Rotation de 360 degrés
       opacity: 0.9, // Opacité réduite
       ease: 'none', // Fonction d'animation
-      duration: 4 // Durée de l'animation
+      duration: 4,
+      marker: true
     });
   }, []);
 
@@ -58,8 +59,8 @@ export default function About() {
         </div>
       </section>
 
-      <div ref={imgAboutRef} className="ml-[10vw]">
-        <Image src={about} alt="mise en scene bureau" className="mt-[2em] mr-[4em] ml-4 rounded-lg " />
+      <div ref={imgAboutRef} className="bg-blue-500">
+        <p className="bg-blue-500 p-6">Test</p>
       </div>
     </div>
   );
