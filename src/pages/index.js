@@ -71,13 +71,13 @@ export default function Home() {
         <section id="services" className="panel bg-painterOrange">
           <h2>THREE</h2>
         </section>
-        <section id="works" className="panel bg-white">
+        <section id="works" className="panel bg-white dark:bg-painterDark">
           <SelectedProjet />
         </section>
-        <section id="#" className="panel dark:bg-white bg-painterDark">
+        <section id="#" className="panel  bg-painterDark">
           <Number />
         </section>
-        <section id="blog" className="panel bg-white">
+        <section id="blog" className="panel bg-white dark:bg-painterDark">
           <Blog />
         </section>
         <section id="contact" className="panel bg-painterDark">

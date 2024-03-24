@@ -55,7 +55,7 @@ export default function SelectedProjet() {
     <div className="flex gap-4 items-center">
       <div className="h-[90vh] w-[25%] border-r-2 border-painterGreyLight flex flex-col gap-4 justify-center p-6 ">
         <Title title={t('projetTitle')} subtitle={t('projetSubtitle')} />
-        <p className="text-[1.3em] font-semibold font-Poppins">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <p className="text-[1.3em] font-semibold font-Poppins dark:text-painterGreyLight">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         <Link href="#">
           <p className="underline text-painterOrange text-[1.3em]">{t('btnContact')}</p>
         </Link>

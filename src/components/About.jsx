@@ -41,21 +41,25 @@ export default function About() {
     <div className="flex items-center gap-10 w-[100%] ">
       <section className="p-16 flex flex-col gap-4 w-[60%] ">
         <Title title={t('aboutTitle')} subtitle={t('aboutSubtitle')} />
-        <p className="text-[1.3em] font-Poppins font-bold text-painterDark">
+        <p className="text-[1.3em] font-Poppins font-bold text-painterDark dark:text-painterGreyLight">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec velit magna, consectetur at suscipit eu, dapibus vel odio. Mauris ac nulla at
           ligula interdum ullamcorper.
         </p>
-        <p className="text-[1em] font-Poppins text-painterGreyLight">
+        <p className="text-[1em] font-Poppins text-painterGreyLight dark:text-white">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec velit magna, consectetur at suscipit eu, dapibus vel odio. Mauris ac nulla at
           ligula interdum ullamcorper.
         </p>
-        <p className="text-[0.9em] font-Poppins text-painterGreyLight">
+        <p className="text-[0.9em] font-Poppins text-painterGreyLight dark:text-white">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec velit magna, consectetur at suscipit eu, dapibus vel odio. Mauris ac nulla at
           ligula interdum ullamcorper.
         </p>
-        <div className="flex gap-12 mt-6 justify-center ">
-          <Image src={logoAbout} alt="logo partenaire" height={50} width={100} />
-          <Image src={logoAboutMoutain} alt="logo climb mountain" width={200} />
+        <div className="flex gap-12 mt-6 justify-center  ">
+          <div className="dark:bg-white p-2 rounded-lg">
+            <Image src={logoAbout} alt="logo partenaire" height={50} width={100} />
+          </div>
+          <div className="dark:bg-white p-2 rounded-lg">
+            <Image src={logoAboutMoutain} alt="logo climb mountain" width={200} />
+          </div>
         </div>
       </section>
 

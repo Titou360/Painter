@@ -33,3 +33,15 @@
   z-index: 999;
   transition: opacity 150ms ease-in-out;
 }
+
+/*page 5 Number */
+.formePolygonV {
+  width: 400px;
+  height: 400px;
+  background-color: gray;
+  clip-path: polygon(0 34%, 0 61%, 29% 87%, 100% 32%, 100% 3%, 29% 60%);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  opacity: 30%;
+}
