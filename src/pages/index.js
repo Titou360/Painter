@@ -15,6 +15,7 @@ import Header from '../components/header';
 
 //composants
 import About from '../components/about';
+import Blog from '../components/blog';
 import ExtraFooter from '../components/extraFooter';
 import Footer from '../components/footer';
 import Hero from '../components/hero';
@@ -75,8 +76,8 @@ export default function Home() {
         <section id="#" className="panel bg-blue-500">
           <h2>FIVE</h2>
         </section>
-        <section id="#" className="panel bg-green-500">
-          <h2>SIX</h2>
+        <section id="blog" className="panel bg-white">
+          <Blog />
         </section>
         <section id="contact" className="panel bg-painterDark">
           <Footer />

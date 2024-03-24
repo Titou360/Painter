@@ -8,7 +8,8 @@ const Table = () => {
     <div className="flex justify-around w-full  border-dotted border-painterGreyLight border-b-[2px] pb-4">
       <p className="bg-black text-white font-bold pl-2 pr-2 pb-1 pt-1 rounded-xl uppercase text-[0.75em]">Stategy</p>
       <p className="text-[1.2em] font-bold hover:underline cursor-pointer">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      <p>Oct 21, 2022</p>
+      <p>Oct 21, 2022 </p>
+      <p className="text-xl cursor-pointer">➜</p>
     </div>
   );
 };
