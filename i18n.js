@@ -25,6 +25,9 @@ import heroFR from './public/locales/fr/hero.json';
 import blogEN from './public/locales/en/blog.json';
 import blogFR from './public/locales/fr/blog.json';
 
+import numberEN from './public/locales/en/number.json';
+import numberFR from './public/locales/fr/number.json';
+
 const resources = {
   en: {
     header: headerTranslationsEN,
@@ -34,7 +37,8 @@ const resources = {
     extraFooter: extraFooterTranslationEN,
     scrollInfo: scrollInfoEN,
     hero: heroEN,
-    blog: blogEN
+    blog: blogEN,
+    number: numberEN
   },
   fr: {
     header: headerTranslationsFR,
@@ -44,7 +48,8 @@ const resources = {
     extraFooter: extraFooterTranslationFR,
     scrollInfo: scrollInfoFR,
     hero: heroFR,
-    blog: blogFR
+    blog: blogFR,
+    number: numberFR
   }
 };
 
