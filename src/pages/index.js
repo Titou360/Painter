@@ -16,6 +16,7 @@ import Header from '../components/header';
 //composants
 import About from '../components/about';
 import Blog from '../components/blog';
+import Expertise from '../components/expertise';
 import ExtraFooter from '../components/extraFooter';
 import Footer from '../components/footer';
 import Hero from '../components/hero';
@@ -69,7 +70,7 @@ export default function Home() {
           <About />
         </section>
         <section id="services" className="panel bg-painterOrange">
-          <h2>THREE</h2>
+          <Expertise />
         </section>
         <section id="works" className="panel bg-white dark:bg-painterDark">
           <SelectedProjet />
