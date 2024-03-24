@@ -19,6 +19,7 @@ import Blog from '../components/blog';
 import ExtraFooter from '../components/extraFooter';
 import Footer from '../components/footer';
 import Hero from '../components/hero';
+import Number from '../components/page5Number';
 import ScrollInfo from '../components/scrollInfo';
 import SelectedProjet from '../components/selectedProjet';
 
@@ -73,8 +74,8 @@ export default function Home() {
         <section id="works" className="panel bg-white">
           <SelectedProjet />
         </section>
-        <section id="#" className="panel bg-blue-500">
-          <h2>FIVE</h2>
+        <section id="#" className="panel dark:bg-white bg-painterDark">
+          <Number />
         </section>
         <section id="blog" className="panel bg-white">
           <Blog />
