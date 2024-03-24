@@ -22,6 +22,9 @@ import scrollInfoFR from './public/locales/fr/scrollInfo.json';
 import heroEN from './public/locales/en/hero.json';
 import heroFR from './public/locales/fr/hero.json';
 
+import blogEN from './public/locales/en/blog.json';
+import blogFR from './public/locales/fr/blog.json';
+
 const resources = {
   en: {
     header: headerTranslationsEN,
@@ -30,7 +33,8 @@ const resources = {
     projet: projetTranslationEn,
     extraFooter: extraFooterTranslationEN,
     scrollInfo: scrollInfoEN,
-    hero: heroEN
+    hero: heroEN,
+    blog: blogEN
   },
   fr: {
     header: headerTranslationsFR,
@@ -39,7 +43,8 @@ const resources = {
     projet: projetTranslationFR,
     extraFooter: extraFooterTranslationFR,
     scrollInfo: scrollInfoFR,
-    hero: heroFR
+    hero: heroFR,
+    blog: blogFR
   }
 };
 
