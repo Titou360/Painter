@@ -8,7 +8,7 @@ const ExtraFooter = () => {
   return (
     <div className="flex flex-row justify-between my-5 ml-5 mr-10">
       <div>
-        <p className="text-white dark:text-painterDark">
+        <p className='text-white dark:text-painterDark'>
           © {t('extraFooter:copyrights')} {currentYear}. {t('extraFooter:rights')}
         </p>
       </div>

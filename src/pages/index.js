@@ -16,10 +16,9 @@ import Header from '../components/header';
 //composants
 import About from '../components/about';
 import ExtraFooter from '../components/extraFooter';
-import Hero from '../components/hero';
 import Footer from '../components/footer';
+import Hero from '../components/hero';
 import ScrollInfo from '../components/scrollInfo';
-
 
 export default function Home() {
   const { t } = useTranslation('header');
@@ -78,7 +77,7 @@ export default function Home() {
         <section id="#" className="panel bg-green-500">
           <h2>SIX</h2>
         </section>
-        <section id="contact" className="panel bg-painterDark">
+        <section id="contact" className="panel bg-painterDark dark:bg-painterGreyLight">
           <Footer />
         </section>
       </div>
