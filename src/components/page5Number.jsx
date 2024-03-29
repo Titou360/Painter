@@ -50,8 +50,8 @@ export default function Number() {
     }
 
     return () => {
-      if (componentRef.current) {
-        observer.unobserve(componentRef.current);
+      if (componentRef) {
+        observer.unobserve(componentRef);
       }
     };
   }, []);
