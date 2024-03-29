@@ -15,10 +15,18 @@ import Header from '../components/header';
 
 //composants
 import About from '../components/about';
+import Blog from '../components/blog';
+import Expertise from '../components/expertise';
 import ExtraFooter from '../components/extraFooter';
 import Footer from '../components/footer';
 import Hero from '../components/hero';
+
 import ScrollInfo from '../components/scrollInfo';
+
+import Number from '../components/page5Number';
+import ScrollInfo from '../components/scrollInfo';
+import SelectedProjet from '../components/selectedProjet';
+
 
 export default function Home() {
   const { t } = useTranslation('header');
@@ -66,16 +74,16 @@ export default function Home() {
           <About />
         </section>
         <section id="services" className="panel bg-painterOrange">
-          <h2>THREE</h2>
+          <Expertise />
         </section>
-        <section id="works" className="panel bg-white">
-          <h2>FOUR</h2>
+        <section id="works" className="panel bg-white dark:bg-painterDark">
+          <SelectedProjet />
         </section>
-        <section id="#" className="panel bg-blue-500">
-          <h2>FIVE</h2>
+        <section id="#" className="panel  bg-painterDark">
+          <Number />
         </section>
-        <section id="#" className="panel bg-green-500">
-          <h2>SIX</h2>
+        <section id="blog" className="panel bg-white dark:bg-painterDark">
+          <Blog />
         </section>
         <section id="contact" className="panel bg-painterDark dark:bg-painterGreyLight">
           <Footer />

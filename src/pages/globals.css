@@ -12,6 +12,7 @@
 }
 
 
+
 /* Footer */
 .custom-el-4 {
     width: 2px;
@@ -20,4 +21,39 @@
     display: block;
     margin-right: 14px;
     float: left;
+}
+
+/*animation projetSelected*/
+
+#ball {
+  background-color: #171717;
+  position: absolute;
+  opacity: 80%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 999;
+  transition: width 0.5s ease, height 0.5s ease;
+}
+
+#cursor-text {
+  color: white;
+  position: absolute;
+  font-weight: bold;
+  transform: translate(-50%, -80%);
+  pointer-events: none;
+  opacity: 0;
+  z-index: 999;
+  transition: opacity 150ms ease-in-out;
+}
+
+/*page 5 Number */
+.formePolygonV {
+  width: 400px;
+  height: 400px;
+  background-color: gray;
+  clip-path: polygon(0 34%, 0 61%, 29% 87%, 100% 32%, 100% 3%, 29% 60%);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  opacity: 30%;
 }
