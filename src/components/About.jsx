@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 
 import logoAbout from '../../public/assets/img/logo_about.png';
 import logoAboutMoutain from '../../public/assets/img/logo_about_mountain.png';
-import Title from './Title';
+import Title from './title';
 
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/dist/ScrollTrigger';
@@ -39,7 +39,7 @@ export default function About() {
 
   return (
     <div className="flex items-center gap-10 w-[100%] ">
-      <section className="p-16 flex flex-col gap-4 w-[60%] ">
+      <div className="p-16 flex flex-col gap-4 w-[60%] ">
         <Title title={t('aboutTitle')} subtitle={t('aboutSubtitle')} />
         <p className="text-[1.3em] font-Poppins font-bold text-painterDark dark:text-painterGreyLight">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec velit magna, consectetur at suscipit eu, dapibus vel odio. Mauris ac nulla at
@@ -61,7 +61,7 @@ export default function About() {
             <Image src={logoAboutMoutain} alt="logo climb mountain" width={200} />
           </div>
         </div>
-      </section>
+      </div>
 
       <div ref={imgAboutRef} className="bg-blue-500">
         <p className="bg-blue-500 p-6">Test</p>
