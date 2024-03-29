@@ -11,6 +11,18 @@
   src: url('/assets/fonts/Cormorant-VariableFont_wght.ttf');
 }
 
+
+
+/* Footer */
+.custom-el-4 {
+    width: 2px;
+    background: white;
+    height: 150px;
+    display: block;
+    margin-right: 14px;
+    float: left;
+}
+
 /*animation projetSelected*/
 
 #ball {
