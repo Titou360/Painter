@@ -5,13 +5,11 @@ import logoAbout from '../../public/assets/img/logo_about.png';
 import logoAboutMoutain from '../../public/assets/img/logo_about_mountain.png';
 import Title from './title';
 
-
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/dist/ScrollTrigger';
 import { useEffect, useRef } from 'react';
 
 gsap.registerPlugin(ScrollTrigger);
-
 
 export default function About() {
   const { t } = useTranslation('about');
