@@ -58,7 +58,7 @@ const Footer = () => {
               <h3 className="text-[1.4em] text-painterGreyLight mb-4 font-medium">Let&apos;s Talk</h3>
               <ul>
                 <li className="text-[1.5em]">0800 256 256</li>
-                <li className="text-[1.5em]">you@domaine.com</li>
+                <li className="text-[1.5em]">clement@domaine.com</li>
               </ul>
             </div>
             <div className="w-1/4 flex-shrink-0 text-left text-white text-[0.8em]">
